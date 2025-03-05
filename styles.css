@@ -1,0 +1,31 @@
+.main {
+    padding: 2rem;
+}
+
+.stTitle {
+    color: #2E7D32 !important;
+    font-size: 2.5rem !important;
+    font-weight: 700 !important;
+}
+
+.info-card {
+    background-color: #F0F7F4;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-left: 5px solid #2E7D32;
+    margin: 1rem 0;
+}
+
+.stat-card {
+    background-color: #E8F5E9;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.tip-card {
+    background-color: #FFF3E0;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 0.5rem 0;
+}
