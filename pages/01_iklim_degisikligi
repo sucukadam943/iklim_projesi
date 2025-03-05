@@ -1,0 +1,46 @@
+import streamlit as st
+from utils import local_css, image_with_caption, info_card
+
+local_css("styles.css")
+
+st.title("İklim Değişikliği Hakkında")
+
+st.markdown("""
+    İklim değişikliği, dünya genelinde sıcaklık ve hava koşullarındaki uzun vadeli değişimleri 
+    ifade eder. Bu değişimler doğal süreçlerden kaynaklanabilir, ancak 19. yüzyıldan bu yana 
+    gözlemlenen değişimlerin ana nedeni insan faaliyetleridir.
+""")
+
+image_with_caption(
+    "https://images.unsplash.com/photo-1628257834696-6eb08710c0c4",
+    "Çevre kirliliği - Fotoğraf: Elle Leontiev"
+)
+
+col1, col2 = st.columns(2)
+
+with col1:
+    info_card(
+        "Sera Gazı Etkisi",
+        "Sera gazları, güneşten gelen ısının atmosferde tutulmasına neden olur. İnsan kaynaklı "
+        "sera gazı emisyonları, bu doğal süreci hızlandırarak küresel ısınmaya yol açar."
+    )
+    
+    info_card(
+        "İnsan Faaliyetleri",
+        "Fosil yakıtların kullanımı, ormansızlaşma, endüstriyel üretim ve tarımsal faaliyetler "
+        "sera gazı emisyonlarının başlıca kaynaklarıdır."
+    )
+
+with col2:
+    info_card(
+        "Küresel Etkiler",
+        "İklim değişikliği; kuraklık, sel, fırtına gibi aşırı hava olaylarının sıklığını ve "
+        "şiddetini artırır. Bu durum gıda güvenliği, su kaynakları ve ekosistemler üzerinde "
+        "olumsuz etkilere yol açar."
+    )
+    
+    info_card(
+        "Türkiye'deki Etkiler",
+        "Türkiye, iklim değişikliğinden önemli ölçüde etkilenen bir bölgede yer almaktadır. "
+        "Kuraklık, su kıtlığı ve tarımsal verimlilik üzerindeki etkiler ön plana çıkmaktadır."
+    )
